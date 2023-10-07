@@ -1,10 +1,28 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 
 import { Link } from "react-router-dom";
 import Navber from "../Share/Navber/Navber";
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
 
 
 const Login = () => {
+    const {signIn} = useContext(AuthContext);
+    const handleLogin = e =>{
+        e.preventDefault();
+        const form =new FormData(e.currentTarget);
+        const email = form.get('email');
+        const password =form.get('password');
+        // console.log(email,password);
+        signIn(email,password)
+        .then(result=>{
+            console.log(result.user);
+        })
+        .catch(error=>{
+            console.log(error);
+        })
+    }
 
     return (
         <div>
@@ -14,7 +32,7 @@ const Login = () => {
                     <h1 className="text-4xl font-extrabold text-center text-blue-600 mb-6">
                         Login to Your Account
                     </h1>
-                    <form className="space-y-4">
+                    <form onSubmit={handleLogin} className="space-y-4">
                         <div>
                             <label className="block text-black text-lg font-medium">Email</label>
                             <input
@@ -34,7 +52,7 @@ const Login = () => {
                                 className="w-full border border-gray-300 rounded-lg py-2 px-3 focus:outline-none focus:border-blue-400"
                                 required
                             />
-                            <Link  className="text-blue-600 block mt-2 text-base font-medium">
+                            <Link className="text-blue-600 block mt-2 text-base font-medium">
                                 Forgot password?
                             </Link>
                         </div>

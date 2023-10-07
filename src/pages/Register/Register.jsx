@@ -1,9 +1,38 @@
-
+/* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
-
 import Navber from "../Share/Navber/Navber";
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Register = () => {
+
+    const {createUser} = useContext(AuthContext)
+
+    const handRegister = e =>{
+        e.preventDefault();
+        const form =new FormData(e.currentTarget);
+        const email = form.get('email');
+        const name = form.get('name');
+        const photo = form.get('photo');
+        const password = form.get('password');
+        console.log(email,photo,name,password);
+        
+// create user
+ createUser(email,password)
+ .then(result=>{
+    console.log(result.user);
+
+ })
+ .catch(error=>{
+    console.log(error);
+ })
+
+
+
+
+
+
+    }
     return (
         <div>
             <Navber></Navber>
@@ -12,7 +41,7 @@ const Register = () => {
                     <h1 className="text-4xl font-extrabold text-center text-blue-600 mb-6">
                         Register an Account
                     </h1>
-                    <form className="space-y-4">
+                    <form onSubmit={handRegister} className="space-y-4">
                         <div>
                             <label className="block text-black text-base font-medium">Name</label>
                             <input

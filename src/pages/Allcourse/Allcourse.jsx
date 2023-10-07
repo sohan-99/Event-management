@@ -26,7 +26,9 @@ const Allcourse = () => {
                         <button
                             className="btn btn-primary text-center">{title.id}:{title.eventName}
                         </button>
-                        <img className="w-96 object-center" src={title.image} alt="" />
+
+                        <img className="w-96 " src={title.image} alt="" />
+
                     </div>
                 </Link>)
             }
