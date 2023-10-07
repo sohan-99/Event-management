@@ -1,0 +1,50 @@
+[
+    {
+        "courseName": "Entertaintment",
+        "image": "https://i.ibb.co/QK8P9ZJ/Entertaintment.jpg",
+        "price": "$49.99",
+        "shortDetails": "Wedding entertainment is an important aspect of your big day, as it helps create a fun and memorable experience for you and your guests.",
+        "detailsButton": "Learn More",
+        "id":"1"
+    },
+    {
+        "courseName": "Dining",
+        "image": "https://i.ibb.co/M71dPHF/Dining.jpg",
+        "price": "$59.99",
+        "shortDetails": "Explore the art of culinary delights and master the world of Dining.",
+        "detailsButton": "Learn More",
+        "id":"2"
+    },
+    {
+        "courseName": "Decor",
+        "image": "https://i.ibb.co/DYq7gq7/Decor.jpg",
+        "price": "$69.99",
+        "shortDetails": "Master the art of wedding decor and create unforgettable moments with our Wedding Decor course.",
+        "detailsButton": "Learn More",
+        "id":"3"
+    },
+    {
+        "courseName": "Swag & Gifting",
+        "image": "https://i.ibb.co/SVdCj68/Swag-Gifting.jpg",
+        "price": "$79.99",
+        "shortDetails": "Explore creative ways to give and receive gifts, and master the art of swag in Swag & Gifting.",
+        "detailsButton": "Learn More",
+        "id":"4"
+    },
+    {
+        "courseName": "Bridal Showers",
+        "image": "https://i.ibb.co/ZYBdjCh/Bridal-Showers.jpg",
+        "price": "$89.99",
+        "shortDetails": "Plan and host beautiful bridal showers that will make memories for a lifetime. Learn to create the perfect atmosphere, choose games and activities, and more.",
+        "detailsButton": "Learn More",
+        "id":"5"
+    },
+    {
+        "courseName": "Wedding photography",
+        "image": "https://i.ibb.co/dBv0YFm/Wedding-photography.jpg",
+        "price": "$39.99",
+        "shortDetails": "Wedding photography is an essential part of capturing the memories and emotions of your special day.",
+        "detailsButton": "Learn More",
+        "id":"6"
+    }
+]
