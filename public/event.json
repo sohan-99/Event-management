@@ -4,7 +4,7 @@
         "image": "https://i.ibb.co/QK8P9ZJ/Entertaintment.jpg",
         "price": "$349",
         "shortDetails": "Entertainment is a form of activity that holds the attention and interest of an audience or gives pleasure and delight.",
-        "detailsButton": "Learn More",
+        "detailEvent": "Wedding entertainment plays a pivotal role in creating unforgettable moments on your special day. It encompasses a variety of elements, from live music and DJs to photo booths and dance performances. A live band can infuse energy and emotion into the atmosphere, while a skilled DJ keeps the dance floor alive with your favorite tunes. Photo booths provide guests with cherished mementos, and interactive entertainers like magicians or caricature artists add a unique flair. Consider cultural performances or themed acts to add a personal touch. Ultimately, the right entertainment elevates the celebration, ensuring everyone has a fantastic time and leaves with cherished memories of your wedding day.",
         "id": "1"
     },
     {
@@ -12,7 +12,7 @@
         "image": "https://i.ibb.co/M71dPHF/Dining.jpg",
         "price": "$400",
         "shortDetails": "Elegant venue,gourmet cuisine,joyful toasts,and loving couple celebrate union with family and friends.",
-        "detailsButton": "Learn More",
+        "detailEvent": "A wedding dining experience is a crucial component of any wedding celebration, providing an opportunity for couples to share their joy with loved ones through a memorable culinary journey. From elegantly plated dishes to lavish buffets, the menu is carefully curated to cater to diverse tastes and preferences. Couples often choose from a range of cuisine options, from traditional to exotic, ensuring that every guest's palate is satisfied. The ambiance of the dining area is equally important, with beautifully decorated tables and personalized settings that reflect the couple's style and theme. Whether it's a formal sit-down dinner or a lively buffet, wedding dining creates cherished moments and bonds families and friends over delicious food and heartfelt toasts.",
         "id": "2"
     },
     {
@@ -20,7 +20,7 @@
         "image": "https://i.ibb.co/DYq7gq7/Decor.jpg",
         "price": "$487",
         "shortDetails": "Master the art of wedding decor and create unforgettable moments with our Wedding Decor course.",
-        "detailsButton": "Learn More",
+        "detailEvent": "Wedding decor sets the ambiance for the most special day in a couple's life. It encompasses a myriad of elements like floral arrangements, lighting, table settings, and thematic choices. Elegance and style often define wedding decor, with color palettes and motifs reflecting the couple's personalities. Flowers, whether in centerpieces or cascading arches, bring a touch of nature's beauty. Candles and fairy lights add a romantic glow, while exquisite linens and tableware enhance the dining experience. From rustic barn weddings to opulent ballroom receptions, wedding decor can transform any venue into a magical space, creating lasting memories for the newlyweds and their guests.",
         "id": "3"
     },
     {
@@ -28,7 +28,7 @@
         "image": "https://i.ibb.co/SVdCj68/Swag-Gifting.jpg",
         "price": "$325",
         "shortDetails": "Explore creative ways to give and receive gifts, and master the art of swag in Swag & Gifting.",
-        "detailsButton": "Learn More",
+        "detailEvent": "Wedding swag and gifting add a touch of charm and personalization to any wedding celebration. These thoughtful tokens of appreciation serve as delightful mementos for guests to cherish. From customized trinkets and monogrammed keepsakes to elegantly packaged favors, wedding swag and gifting options are endless. They allow couples to express their gratitude to attendees and share their love story in unique ways. Whether it's a small, intimate gathering or a grand affair, these tokens serve as a beautiful gesture, creating lasting memories for everyone involved. The choice of wedding swag and gifting reflects the couple's style, theme, and appreciation for their loved ones, making the occasion even more memorable.",
         "id": "4"
     },
     {
@@ -36,7 +36,7 @@
         "image": "https://i.ibb.co/ZYBdjCh/Bridal-Showers.jpg",
         "price": "$200",
         "shortDetails": "Pre-wedding celebration with gifts, games, and love for the bride-to-be. Joyful gathering of friends and family.",
-        "detailsButton": "Learn More",
+        "detailEvent": "A wedding bridal shower is a cherished pre-wedding celebration honoring the bride-to-be. Typically organized by friends or family, it's a special gathering where loved ones shower the bride with gifts, love, and well wishes. These gatherings often feature games, delicious food, and an atmosphere of joy and anticipation. Bridal showers provide an opportunity for the bride and her closest friends and family to bond, share stories, and create lasting memories. Themes and decor often reflect the bride's personality and interests, adding a personal touch to the event. Overall, bridal showers serve as a heartwarming prelude to the wedding day, filled with laughter, support, and the celebration of love.",
         "id": "5"
     },
     {
@@ -44,7 +44,7 @@
         "image": "https://i.ibb.co/dBv0YFm/Wedding-photography.jpg",
         "price": "$382",
         "shortDetails": "Wedding photography is an essential part of capturing the memories and emotions of your special day.",
-        "detailsButton": "Learn More",
+        "detailEvent": "Wedding photography is an art form that captures the beautiful moments, emotions, and memories of one of life's most significant celebrations. A skilled wedding photographer possesses both technical expertise and a keen eye for detail, ensuring that every precious moment is immortalized. From the bride's radiant smile to the groom's heartfelt vows, wedding photography preserves the love, joy, and connection between the couple and their loved ones. These timeless images become cherished heirlooms, allowing couples to relive their special day for generations to come. With creativity, patience, and a passion for storytelling, wedding photographers turn fleeting moments into lasting treasures, making each wedding an unforgettable visual narrative.",
         "id": "6"
     }
 ]

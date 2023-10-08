@@ -6,16 +6,17 @@ import { AuthContext } from "../../../providers/AuthProvider";
 
 const Navber = () => {
 
-    const {user,logOut} = useContext(AuthContext);
 
-    const handleSignOut =() =>{
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleSignOut = () => {
         logOut()
-        .then(result=>{
-            console.log(result.user);
-        })
-        .catch(error=>{
-            console.log(error);
-        })
+            .then(result => {
+                console.log(result.user);
+            })
+            .catch(error => {
+                console.log(error);
+            })
 
     }
 
@@ -23,7 +24,7 @@ const Navber = () => {
         <>
             <li><NavLink to='/'>Home</NavLink></li>
             <li><NavLink to='/about'>About</NavLink></li>
-            {/* <li><NavLink to='/allcourse'>Services</NavLink></li> */}
+            {/* <li><NavLink to='/event/:id'>Services</NavLink></li> */}
             <li><NavLink to='/register'>Register</NavLink></li>
             <li><NavLink to='/login'>Login</NavLink></li>
             <li><NavLink to='/contact'>Contact</NavLink></li>
@@ -46,16 +47,30 @@ const Navber = () => {
                     {links}
                 </ul>
             </div>
+
             <div className="navbar-end">
+                <div className="avatar online mr-2">
+                    <div className="w-10 rounded-full">
+                        {user && user.photoURL ? (
+                            <img src={user.photoURL} alt="User Profile" />
+                        ) : (
+                            <div className="avatar offline">
+                                <div className="w-10 rounded-full">
+                                <img src="/src/assets/user.png" />
+                                </div>
+                            </div>
+
+                        )}
+                    </div>
+                </div>
                 {
-                    user ? 
-                    <button onClick={handleSignOut} className="btn btn-primary">Sign Out</button>
-                    :
-                    <Link to='/login'>
-                    <button className="btn btn-primary">Login</button>
-                </Link>
+                    user ?
+                        <button onClick={handleSignOut} className="btn btn-primary">Sign Out</button>
+                        :
+                        <Link to='/login'>
+                            <button className="btn btn-primary">Login</button>
+                        </Link>
                 }
-               
             </div>
         </div>
     );

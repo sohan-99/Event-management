@@ -22,7 +22,8 @@ const router =createBrowserRouter([
             },
             {
                 path:'/event/:id',
-                element:<PrivateRoute><WeddingDetails></WeddingDetails></PrivateRoute>
+                element:<PrivateRoute><WeddingDetails></WeddingDetails></PrivateRoute>,
+                loader: () =>fetch('/event.json')
             },
             {
                 path:'/login',
@@ -38,11 +39,11 @@ const router =createBrowserRouter([
             },
             {
                 path:'/about',
-                element:<About></About>
+                element:<PrivateRoute><About></About></PrivateRoute>
             },
             {
                 path:'/contact',
-                element:<Contact></Contact>
+                element:<PrivateRoute><Contact></Contact></PrivateRoute>
             }
         ]
       },

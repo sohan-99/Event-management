@@ -1,42 +1,41 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navber from "../Share/Navber/Navber";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 const Register = () => {
+    const navigate = useNavigate()
 
-    const {createUser} = useContext(AuthContext)
+    const { createUser, updateUserProfile } = useContext(AuthContext)
 
-    const handRegister = e =>{
+    const handRegister = e => {
         e.preventDefault();
-        const form =new FormData(e.currentTarget);
+        const form = new FormData(e.currentTarget);
         const email = form.get('email');
         const name = form.get('name');
         const photo = form.get('photo');
         const password = form.get('password');
-        console.log(email,photo,name,password);
+        console.log(email, photo, name, password);
 
-// create user
- createUser(email,password)
- .then(result=>{
-    // console.log(result.user);
-    toast.success("Successfully Register !");
-
- })
- .catch(error=>{
-    // console.log(error);
-    toast.error("Register Unsuccessful!");
- })
-
-
-
-
-
-
+        // create user
+        createUser(email, password)
+            .then(result => {
+                updateUserProfile(name, photo)
+                    .then(data => {
+                        toast.success("Successfully Register !");
+                    })
+                    .catch(error => {
+                        console.log(error);
+                    })
+            })
+            .catch(error => {
+                toast.error(error.message);
+            })
     }
     return (
         <div>
@@ -100,7 +99,7 @@ const Register = () => {
                     </p>
                 </div>
             </div>
-            <ToastContainer/>
+            <ToastContainer />
         </div>
     );
 };

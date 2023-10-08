@@ -4,7 +4,7 @@ const Slider = () => {
     return (
         <div className="my-3 carousel w-full h-[500px]">
         <div id="slide1" className="carousel-item relative w-full">
-            <img src="https://i.ibb.co/JdgLgGd/Alekhya-Himanth-Wedding-459.webp" className="w-full" />
+            <img src="https://i.ibb.co/hW31B93/102991-destination-weddings-in-india-lead.jpg" className="w-full" />
             <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide4" className="btn btn-circle">❮</a>
                 <a href="#slide2" className="btn btn-circle">❯</a>

@@ -9,34 +9,32 @@ import { AuthContext } from "../../providers/AuthProvider";
 
 
 const Login = () => {
-    const {signIn} = useContext(AuthContext);
-    const navigate =useNavigate()
+    const { signIn } = useContext(AuthContext);
+    const navigate = useNavigate()
     const location = useLocation();
     console.log(location);
-    const handleLogin = e =>{
+    const handleLogin = e => {
         e.preventDefault();
-        const form =new FormData(e.currentTarget);
+        const form = new FormData(e.currentTarget);
         const email = form.get('email');
-        const password =form.get('password');
+        const password = form.get('password');
         // console.log(email,password);
-        signIn(email,password)
-        .then(result=>{
-            // console.log(result.user);
-            toast.success('Successfully Login!')
+        signIn(email, password)
+            .then(result => {
+                // console.log(result.user);
+                toast.success('Successfully Login!')
+                // navigate(location?.state ? location.state : '/')
+            })
+            .catch(error => {
+                // console.log(error);
+                toast.error(error.message);
+            })
 
-            // navigate
-            navigate(location?.state ? location.state : '/')
-        })
-        .catch(error=>{
-            // console.log(error);
-            toast.error("Login Unsuccessful!");
-        })
-        
     }
 
     return (
         <div>
-             
+
             <Navber></Navber>
             <div className="mt-14 flex flex-col items-center justify-center">
                 <div className="bg-gray-300 w-full max-w-md p-8 rounded-lg shadow-lg">
