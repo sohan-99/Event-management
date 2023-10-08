@@ -1,5 +1,5 @@
 import LeftSideNav from "../LeftSideNav/LeftSideNav";
-// import Header from "../Share/Header/Header";
+
 import Navber from "../Share/Navber/Navber";
 
 
@@ -8,7 +8,6 @@ const Home = () => {
         <div >
             {/* <Header></Header> */}
             <Navber></Navber>
-            
             <div className="grid lg:grid-cols-4 gap-6">
                 <div className="border">
                     <LeftSideNav></LeftSideNav>
@@ -17,6 +16,7 @@ const Home = () => {
                     <h2>Present Online Courses</h2>
                 </div>
             </div>
+            
         </div>
     );
 };

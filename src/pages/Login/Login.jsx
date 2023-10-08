@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { Link } from "react-router-dom";
 import Navber from "../Share/Navber/Navber";
 import { useContext } from "react";
@@ -17,15 +18,19 @@ const Login = () => {
         // console.log(email,password);
         signIn(email,password)
         .then(result=>{
-            console.log(result.user);
+            // console.log(result.user);
+            toast.success('Successfully Login!')
         })
         .catch(error=>{
-            console.log(error);
+            // console.log(error);
+            toast.error("Login Unsuccessful!");
         })
+        
     }
 
     return (
         <div>
+             
             <Navber></Navber>
             <div className="mt-14 flex flex-col items-center justify-center">
                 <div className="bg-gray-300 w-full max-w-md p-8 rounded-lg shadow-lg">
@@ -70,6 +75,7 @@ const Login = () => {
                     </p>
                 </div>
             </div>
+            <ToastContainer />
         </div>
     );
 };

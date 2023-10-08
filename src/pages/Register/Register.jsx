@@ -1,8 +1,11 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom";
 import Navber from "../Share/Navber/Navber";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
 
@@ -16,15 +19,17 @@ const Register = () => {
         const photo = form.get('photo');
         const password = form.get('password');
         console.log(email,photo,name,password);
-        
+
 // create user
  createUser(email,password)
  .then(result=>{
-    console.log(result.user);
+    // console.log(result.user);
+    toast.success("Successfully Register !");
 
  })
  .catch(error=>{
-    console.log(error);
+    // console.log(error);
+    toast.error("Register Unsuccessful!");
  })
 
 
@@ -95,6 +100,7 @@ const Register = () => {
                     </p>
                 </div>
             </div>
+            <ToastContainer/>
         </div>
     );
 };
