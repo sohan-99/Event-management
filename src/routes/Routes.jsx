@@ -7,6 +7,8 @@ import Register from "../pages/Register/Register";
 import Allcourse from "../pages/Allcourse/Allcourse";
 import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
+import WeddingDetails from "../pages/WeddingDetails/WeddingDetails";
+import PrivateRoute from "./PrivateRoute";
 
 const router =createBrowserRouter([
     {
@@ -16,7 +18,11 @@ const router =createBrowserRouter([
             {
                 path: '/',
                 element:<Home></Home>,
-                loader: () =>fetch('event.json')
+                loader: () =>fetch('/event.json')
+            },
+            {
+                path:'/event/:id',
+                element:<PrivateRoute><WeddingDetails></WeddingDetails></PrivateRoute>
             },
             {
                 path:'/login',

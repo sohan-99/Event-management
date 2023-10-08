@@ -1,6 +1,9 @@
+/* eslint-disable no-unused-vars */
 import { useLoaderData } from "react-router-dom";
 import Navber from "../Share/Navber/Navber";
 import WeddingCard from "./WeddingCard";
+import Slider from "../Banner/Slider";
+
 
 
 const Home = () => {
@@ -9,6 +12,7 @@ const Home = () => {
     return (
         <div >
             <Navber></Navber>
+            {/* <Slider></Slider> */}
             <div className="grid lg:grid-cols-4 gap-6">
                 <div className="lg:col-span-4 border lg:text-4xl font-bold text-center">
                     <h2>Perfect Weddings Partner!</h2>

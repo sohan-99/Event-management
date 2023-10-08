@@ -2,7 +2,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate, } from "react-router-dom";
 import Navber from "../Share/Navber/Navber";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
@@ -10,6 +10,9 @@ import { AuthContext } from "../../providers/AuthProvider";
 
 const Login = () => {
     const {signIn} = useContext(AuthContext);
+    const navigate =useNavigate()
+    const location = useLocation();
+    console.log(location);
     const handleLogin = e =>{
         e.preventDefault();
         const form =new FormData(e.currentTarget);
@@ -20,6 +23,9 @@ const Login = () => {
         .then(result=>{
             // console.log(result.user);
             toast.success('Successfully Login!')
+
+            // navigate
+            navigate(location?.state ? location.state : '/')
         })
         .catch(error=>{
             // console.log(error);
