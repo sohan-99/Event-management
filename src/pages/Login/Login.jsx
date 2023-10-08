@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 import { ToastContainer, toast } from 'react-toastify';
@@ -6,18 +7,40 @@ import { Link, useLocation, useNavigate, } from "react-router-dom";
 import Navber from "../Share/Navber/Navber";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
+import app from '../../firebase/firebase.config';
 
 
 const Login = () => {
     const { signIn } = useContext(AuthContext);
-    const navigate = useNavigate()
+    const navigate = useNavigate();
     const location = useLocation();
-    console.log(location);
+
+    const handleGooglePopUp = () => {
+        const auth = getAuth(app);
+        const provider = new GoogleAuthProvider();
+
+        signInWithPopup(auth, provider)
+            .then(result => {
+                console.log(result.user);
+                toast.success('Successfully Login!');
+                // You can navigate the user here after successful login if needed.
+                // navigate(location?.state ? location.state : '/');
+            })
+            .catch(error => {
+                console.log(error);
+                toast.error(error.message);
+            });
+    };
+
     const handleLogin = e => {
         e.preventDefault();
         const form = new FormData(e.currentTarget);
         const email = form.get('email');
         const password = form.get('password');
+
+
+
         // console.log(email,password);
         signIn(email, password)
             .then(result => {
@@ -65,6 +88,9 @@ const Login = () => {
                                 Forgot password?
                             </Link>
                         </div>
+                        <button onClick={handleGooglePopUp} className="bg-blue-500 hover:bg-blue-600 text-xl font-semibold text-white py-3 px-6 rounded-full transition duration-300 w-full">
+                            Google Login
+                        </button>
                         <div className="text-center">
                             <button className="bg-blue-500 hover:bg-blue-600 text-xl font-semibold text-white py-3 px-6 rounded-full transition duration-300 w-full">
                                 Login
@@ -84,4 +110,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default Login;  
