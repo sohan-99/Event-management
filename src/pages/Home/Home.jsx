@@ -1,19 +1,22 @@
-import LeftSideNav from "../LeftSideNav/LeftSideNav";
-
+import { useLoaderData } from "react-router-dom";
 import Navber from "../Share/Navber/Navber";
+import WeddingCard from "./WeddingCard";
 
 
 const Home = () => {
+    const weddingCard = useLoaderData();
+    console.log(weddingCard);
     return (
         <div >
-            {/* <Header></Header> */}
             <Navber></Navber>
             <div className="grid lg:grid-cols-4 gap-6">
-                <div className="border">
-                    <LeftSideNav></LeftSideNav>
-                </div>
-                <div className="lg:col-span-3 border text-3xl font-bold text-center">
-                    <h2>Present Online Courses</h2>
+                <div className="lg:col-span-4 border lg:text-4xl font-bold text-center">
+                    <h2>Perfect Weddings Partner!</h2>
+                    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
+                    {
+                        weddingCard.map(card =><WeddingCard key={card.id} weddingCard={card}></WeddingCard>)
+                    }
+                    </div>
                 </div>
             </div>
             

@@ -3,7 +3,7 @@
         "eventName": "Entertaintment",
         "image": "https://i.ibb.co/QK8P9ZJ/Entertaintment.jpg",
         "price": "$349",
-        "shortDetails": "Wedding entertainment is an important aspect of your big day, as it helps create a fun and memorable experience for you and your guests.",
+        "shortDetails": "Entertainment is a form of activity that holds the attention and interest of an audience or gives pleasure and delight.",
         "detailsButton": "Learn More",
         "id": "1"
     },
@@ -11,7 +11,7 @@
         "eventName": "Dining",
         "image": "https://i.ibb.co/M71dPHF/Dining.jpg",
         "price": "$400",
-        "shortDetails": "Explore the art of culinary delights and master the world of Dining.",
+        "shortDetails": "Elegant venue,gourmet cuisine,joyful toasts,and loving couple celebrate union with family and friends.",
         "detailsButton": "Learn More",
         "id": "2"
     },
@@ -35,7 +35,7 @@
         "eventName": "Bridal Showers",
         "image": "https://i.ibb.co/ZYBdjCh/Bridal-Showers.jpg",
         "price": "$200",
-        "shortDetails": "Plan and host beautiful bridal showers that will make memories for a lifetime. Learn to create the perfect atmosphere, choose games and activities, and more.",
+        "shortDetails": "Pre-wedding celebration with gifts, games, and love for the bride-to-be. Joyful gathering of friends and family.",
         "detailsButton": "Learn More",
         "id": "5"
     },
