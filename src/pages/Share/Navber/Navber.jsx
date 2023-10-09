@@ -48,7 +48,7 @@ const Navber = () => {
                 </ul>
             </div>
 
-            <div className="lg:navbar-end md:navbar-center">
+            <div className="navbar-end">
                 <div className=" mr-2">
                     <div >
                         {user && user.uid ? (
