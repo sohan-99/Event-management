@@ -142,3 +142,37 @@ Therefore, the final value of count is 3, and the console.log(count) statement w
 
 </p>
 </details>
+
+Website name : Monaly Weddings event-management
+Live Site Link : https://event-manegment-7b9e1.web.app/
+
+
+
+
+Five five bullet points:
+
+1.Homepage (Home): The homepage is the main landing page of your website. It displays a title, a slider (possibly for showcasing images or content), and a grid of wedding cards. The wedding cards seem to be dynamic and fetched from an external JSON source, making the content of the homepage customizable and dynamic.
+
+2.Private Routing (PrivateRoute): Your website includes a private route component that restricts access to certain pages or routes based on user authentication. If a user is not authenticated (logged in), they are redirected to the login page. This ensures security and controlled access to specific parts of the website.
+
+3.Dynamic Data Loading: You are using the useLoaderData function to fetch data (likely wedding card information) from an external JSON source. This allows you to populate your website with real-time data, making it dynamic and up-to-date.
+
+4.Multiple Pages: Your website consists of multiple pages, including the homepage, login page, registration page, a page displaying all courses (possibly related to weddings), an about page, a contact page, and a wedding details page. This provides users with diverse content and functionalities to explore.
+5.Navigation Bar (Navber): Your website has a navigation bar component that allows users to easily navigate to different sections or pages of the website. This enhances the user experience by providing clear navigation.
+
+6.User Authentication (Login and Register): Your website allows users to create accounts (Register) and log in (Login). This feature provides a secure way for users to access personalized content and services on your site.
+
+7.Form Validation: Both the Login and Register forms include client-side validation for user inputs. For example, the password validation in the Register component checks for password length and character requirements. This ensures that users provide valid information when signing up or logging in.
+
+8.Toast Notifications: Your website uses toast notifications from the react-toastify library to provide feedback to users. It displays success messages when users successfully log in or register and error messages when there are issues. Toast notifications enhance the user experience by providing real-time feedback.
+
+9.Google Sign-In (Login): Users have the option to log in using their Google accounts. The "Google Login" button triggers the Google Sign-In popup, which authenticates users via Google's OAuth mechanism. This offers convenience for users who prefer using their Google credentials.
+
+10.Navigation and Links: Both the Login and Register components include navigation links. Users can easily switch between the login and registration pages. Additionally, there is a "Forgot password?" link on the Login page, suggesting a potential password recovery feature.
+
+These features collectively create a user-friendly and secure authentication system for your website, providing options for both traditional email/password login and Google authentication.
+
+
+
+
+
