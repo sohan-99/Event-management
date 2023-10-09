@@ -22,15 +22,23 @@ const Register = () => {
         const password = form.get('password');
         console.log(email, photo, name, password);
 
+        // Validate the password
+        if (password.length < 6 || !/[A-Z]/.test(password) || !/[!@#$%^&*()_+[\]{};':"\\|,.<>?]/.test(password)) {
+            toast.error("Password does not meet requirements.");
+            return;
+        }
+
+
         // create user
         createUser(email, password)
             .then(result => {
                 updateUserProfile(name, photo)
                     .then(data => {
+                        console.log(data);
                         toast.success("Successfully Register !");
                     })
                     .catch(error => {
-                        console.log(error);
+                        console.log(error.message);
                     })
             })
             .catch(error => {

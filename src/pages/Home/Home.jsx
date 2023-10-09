@@ -11,7 +11,7 @@ import Extra2 from "../Extra2/Extra2";
 
 const Home = () => {
     const weddingCard = useLoaderData();
-    console.log(weddingCard);
+    // console.log(weddingCard);
     return (
         <div >
             <Navber></Navber>
