@@ -5,7 +5,7 @@ const Footer = () => {
         <div>
             <footer className="footer p-10 bg-indigo-600 text-neutral-content">
                 <aside>
-                    <img className="" src="/src/assets/444.png" alt="logo" />
+                    <img className="" src="https://i.ibb.co/4mYJ5Wf/444.png" alt="logo" />
                     <p className="text-center text-base font-medium text-white">Monaly - Where Dreams Unite: Your premier <br />
                         wedding destination, bringing love stories
                         to life with elegance, grace,<br /> and timeless

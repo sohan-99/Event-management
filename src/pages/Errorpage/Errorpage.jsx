@@ -6,7 +6,7 @@ const Errorpage = () => {
         <div id="error-page" className="min-h-screen flex items-center justify-center bg-gray-100">
             <div className="max-w-md p-4 bg-white shadow-md rounded-lg">
                 <img
-                    src="/src/assets/Icon.png" 
+                    src="https://i.ibb.co/mRs8X27/Icon.png" 
                     alt="Error"
                     className="mx-auto h-auto w-32 md:w-48 lg:w-64"
                 />

@@ -40,7 +40,7 @@ const Navber = () => {
                         {links}
                     </ul>
                 </div>
-                <img className="w-32 h-20" src="/src/assets/444.png" alt="" />
+                <img className="w-32 h-20" src="https://i.ibb.co/4mYJ5Wf/444.png" alt="" />
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 lg:text-base md:text-sm text-xs  lg:font-semibold md:font-medium font-normal">
@@ -59,7 +59,7 @@ const Navber = () => {
                         ) : (
                             <div className="avatar offline">
                                 <div className="w-10 rounded-full">
-                                    <img src="/src/assets/user.png" />
+                                    <img src="https://i.ibb.co/4FDQMgt/user.png" />
                                 </div>
                             </div>
 
