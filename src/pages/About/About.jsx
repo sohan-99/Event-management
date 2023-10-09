@@ -6,9 +6,9 @@ const About = () => {
             <Navber></Navber>
             <h1 className="text-6xl font-bold text-center">About <span className="text-red-600">Us !</span> </h1>
             <div className="hero min-h-screen my-6 ">
-                <div className="hero-content flex-col lg:flex-row-reverse">
-                    <div>
-                        <h2 className="text-lg font-bold text-red-400">
+                <div className="hero-content flex-col lg:flex-row md:flex-col">
+                    <div className="lg:w-[50%]">
+                        <h2 className="text-lg font-extrabold  text-red-400">
                             Who We Are
                         </h2>
                         <p className="text-green-600 text-5xl font-semibold mb-6">
@@ -23,7 +23,7 @@ const About = () => {
                             Marriage License, Wedding Day Timeline,<br />Final Details,  Emergency Kit,
                             Relax & Enjoy.
                         </p>
-                        <div className="stats stats-vertical mt-36 lg:stats-horizontal shadow">
+                        <div className="stats stats-vertical lg:mt-36 md:my-20 lg:stats-horizontal md:stats-horizontal shadow">
                             <div className="stat">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-8 h-8 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                                 <div className="stat-value">1565+</div>
@@ -41,7 +41,7 @@ const About = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-[500px]">
+                    <div className="lg:w-[50%]">
                         <img className="lg:w-[450px] w-[300px] md:w-[750px] lg:h-[450]" src="https://i.ibb.co/m8FxyMM/817a781feaafd6ea2ba6d896f186c087.jpg" alt="" />
                     </div>
                 </div>

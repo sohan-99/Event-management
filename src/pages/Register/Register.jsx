@@ -41,13 +41,13 @@ const Register = () => {
         <div>
             <Navber></Navber>
             <div className="mt-14 mb-9 flex flex-col items-center justify-center">
-                <div className="bg-gray-300 w-full max-w-md p-8 rounded-lg shadow-lg">
-                    <h1 className="text-4xl font-extrabold text-center text-blue-600 mb-6">
+                <div className="bg-gray-300 lg:max-w-lg w-[80%] md:w-[75%] lg:w-[85%]  p-8 rounded-lg shadow-lg">
+                    <h1 className="lg:text-4xl md:text-2xl font-extrabold text-center text-blue-600 mb-6">
                         Register an Account
                     </h1>
                     <form onSubmit={handRegister} className="space-y-4">
                         <div>
-                            <label className="block text-black text-base font-medium">Name</label>
+                            <label className="block text-black lg:text-lg md:text-base font-medium">Name</label>
                             <input
                                 type="text"
                                 name="name"
@@ -57,7 +57,7 @@ const Register = () => {
                             />
                         </div>
                         <div>
-                            <label className="block text-black text-base font-medium">Photo URL</label>
+                            <label className="block text-black lg:text-lg md:text-base   font-medium">Photo URL</label>
                             <input
                                 type="text"
                                 name="photo"
@@ -66,7 +66,7 @@ const Register = () => {
                             />
                         </div>
                         <div>
-                            <label className="block text-black text-base font-medium">Email</label>
+                            <label className="block text-black lg:text-lg md:text-base font-medium">Email</label>
                             <input
                                 type="email"
                                 name="email"
@@ -76,7 +76,7 @@ const Register = () => {
                             />
                         </div>
                         <div>
-                            <label className="block text-black text-base font-medium">Password</label>
+                            <label className="block text-black lg:text-lg md:text-base  font-medium">Password</label>
                             <input
                                 type="password"
                                 name="password"
@@ -86,7 +86,7 @@ const Register = () => {
                             />
                         </div>
                         <div className="text-center">
-                            <button className="bg-blue-500 hover:bg-blue-600 text-white text-xl font-semibold py-3 px-6 rounded-full transition duration-300 w-full">
+                            <button className="bg-blue-500 hover:bg-blue-600 text-white lg:text-xl font-semibold py-3 px-6 rounded-full transition duration-300 w-full">
                                 Register
                             </button>
                         </div>

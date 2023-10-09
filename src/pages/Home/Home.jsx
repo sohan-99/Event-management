@@ -15,10 +15,10 @@ const Home = () => {
     return (
         <div >
             <Navber></Navber>
+                    <h2 className="text-6xl font-bold text-center"><span className="text-red-600">Perfect</span> Weddings <span className="text-red-600">Partner!</span></h2>
             <Slider></Slider>
             <div className="grid lg:grid-cols-4 gap-6">
                 <div className="lg:col-span-4 lg:text-4xl font-bold text-center">
-                    <h2>Perfect Weddings Partner!</h2>
                     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
                     {
                         weddingCard.map(card =><WeddingCard key={card.id} weddingCard={card}></WeddingCard>)
