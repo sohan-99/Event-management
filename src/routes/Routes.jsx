@@ -37,7 +37,7 @@ const router =createBrowserRouter([
             },
             {
                 path:'/allcourse',
-                element:<Allcourse></Allcourse>
+                element:<PrivateRoute><Allcourse></Allcourse></PrivateRoute>
             },
             {
                 path:'/about',

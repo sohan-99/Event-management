@@ -16,7 +16,7 @@ const WeddingCard = ({ weddingCard }) => {
                 <p className="lg:text-base md:text-sm text-sm font-medium">{shortDetails}</p>
                 <div className="card-actions justify-end">
                     <Link to={`/event/${id}`}>
-                    <button className="btn btn-primary">Details</button>
+                    <button className="btn btn-primary">More Details</button>
                     </Link>
                 </div>
             </div>

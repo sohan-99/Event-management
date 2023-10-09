@@ -48,15 +48,18 @@ const Navber = () => {
                 </ul>
             </div>
 
-            <div className="navbar-end">
-                <div className="avatar online mr-2">
-                    <div className="w-10 rounded-full">
-                        {user && user.photoURL ? (
-                            <img src={user.photoURL} alt="User Profile" />
+            <div className="lg:navbar-end md:navbar-center">
+                <div className=" mr-2">
+                    <div >
+                        {user && user.uid ? (
+                            <div className="flex   items-center">
+                                <p className="text-lg font-extrabold">{user.displayName}</p>
+                                <img className="w-12 h-12 rounded-full border-4 border-red-600" src={user.photoURL} alt="User Profile" />
+                            </div>
                         ) : (
                             <div className="avatar offline">
                                 <div className="w-10 rounded-full">
-                                <img src="/src/assets/user.png" />
+                                    <img src="/src/assets/user.png" />
                                 </div>
                             </div>
 

@@ -15,7 +15,7 @@ const Login = () => {
     const { signIn } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
-
+    const from = location.state?.from?.pathname || "/";
     const handleGooglePopUp = () => {
         const auth = getAuth(app);
         const provider = new GoogleAuthProvider();
@@ -25,7 +25,7 @@ const Login = () => {
                 console.log(result.user);
                 toast.success('Successfully Login!');
                 // You can navigate the user here after successful login if needed.
-                // navigate(location?.state ? location.state : '/');
+                // navigate(location?.state? location.state : '/')
             })
             .catch(error => {
                 console.log(error);
@@ -46,7 +46,7 @@ const Login = () => {
             .then(result => {
                 // console.log(result.user);
                 toast.success('Successfully Login!')
-                // navigate(location?.state ? location.state : '/')
+                navigate(from, { replace: true });
             })
             .catch(error => {
                 // console.log(error);
